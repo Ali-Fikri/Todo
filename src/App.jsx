@@ -9,7 +9,7 @@ function App() {
   const [todos, setTodos] = useState(() => {
     const localValue = localStorage.getItem("ITEMS");
 
-    return localValue == null ? [] : JSON.parse(localValue);
+    return localValue == null ? [] : JSON.parse(localValue);//
   });
 
   useEffect(() => {
